@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    color: white;
+    text-align: center;
+    width: auto;
+    margin: 0;
+    padding: 20px 20px;
+    background-color: #333333;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.col-left {
+    padding: 20px;
+    background-color: #f2f3f4;
+    flex: calc(100% / 3);
+    flex-grow: 1;
+}
+
+.col-right {
+    padding: 20px 20px 0 20px;
+    flex: calc(100% * 2 / 3);
+    flex-grow: 1;
+}
+
+.search {
+    display: flex;
+    margin: 8px 0 16px 0;
+}
+
+.search input {
+    outline: none;
+    min-width: 50%;
+    font-size: large;
+    padding: 8px;
+    margin: 0;
+    border-radius: 5px 0 0 5px;
+    border: lightgray solid 2px;
+}
+
+.search input:focus {
+    border: gray solid 2px;
+}
+
+.search button {
+    outline: none;
+    color: white;
+    font-size: large;
+    padding: 8px;
+    background-color: #007fff;
+    margin: 0;
+    border-radius: 0 5px 5px 0;
+    border: #007fff solid 2px;
+}
+
+.search button:hover{
+    border-style: outset;
+}
+
+#current-weather {
+    padding: 8px 16px;
+    width: auto;
+    /* margin: 8px; */
+    border-radius: 5px;
+    border: lightgray solid 2px;
+    line-height: 300%;
+}
+
+.forcast-box {
+    margin: 8px 0 0 0;
+    line-height: 300%;
+}
+
+#forcast-weather {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 300%;
+    margin: 0 -8px 0 -8px;
+}
+
+.daily {
+    flex: 1 1 auto;
+    justify-content: space-between;
+    background-color: #007fff;
+    border-radius: 5px;
+    padding: 4px 8px;
+    color: white;
+    margin: 8px 8px 8px 8px;
+    min-width: 200px;
+}
+
+#saved-locations button {
+    width: 100%;
+    font-size: large;
+    border-radius: 0;
+    border: lightgray solid 2px;
+    border-bottom: none;
+    line-height: 200%;
+}
+
+#saved-locations button:first-child {
+    border-radius: 5px 5px 0 0;
+}
+
+#saved-locations button:last-child {
+    border-radius: 0 0 5px 5px;
+    border-bottom: lightgray solid 2px;
+}
+
+#saved-locations button:only-child {
+    border-radius: 5px;
+    border-bottom: lightgray solid 2px;
+}
+
+#saved-locations button:hover {
+    background-color: lightgray;
+}
+
+.safe {
+    background-color: green;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+.moderate {
+    background-color: yellow;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.danger {
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px;
+}

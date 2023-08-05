@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Weather Dashboard</title>
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBt8py5NagvvwnvqX8xH78p6ZFSBeSBd-o&callback=initAutocomplete&libraries=places">
+    </script>
+</head>
+<body>
+    
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    
+    <div class="row">
+
+    
+    <div class="col-left">
+        <h3>Search for a City:</h3>
+
+        
+        <div class="search">
+            <input type="text" id="entry" placeholder="Enter City..">
+            <button type="submit" id="form-sub"><i class="fa fa-search"></i></button>
+        </div>
+
+        
+        <div id="saved-locations"></div>
+    </div>
+
+    
+    <div class="col-right">
+        <h2>Enter City to See Forcast</h2>
+    </div>
+
+    </div>
+
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
